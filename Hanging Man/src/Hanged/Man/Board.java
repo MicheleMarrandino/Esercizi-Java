@@ -41,6 +41,7 @@ public class Board extends GameConfig{
     private void wrongAnswer(){
         if(withHint && --lives> 0)
             log.yellow("\n\b\bForse vuoi provare con una " + this.hiddenWord.getHint() + "...");
+        correct = 0;
     }
 
 }
